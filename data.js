@@ -2,11 +2,11 @@
 //they are either related to the rooms or shared with the server 
 module.exports.SETTINGS = {
     //if not specified by the url where is the starting point
-    defaultRoom: "likelikeOutside",
+    defaultRoom: "bithotelOutside",
     //minimum time between talk messages enforced by both client and server
     ANTI_SPAM: 1000,
     //shows up at first non lurking login
-    INTRO_TEXT: "Click/tap to move"
+    INTRO_TEXT: "Tap to move around"
 };
 
 //miscellaneous assets to preload
@@ -72,9 +72,9 @@ module.exports.ROOMS = {
             //point: where to walk after click
             //enterPoint: where to spawn in the next room
             //obstacle: is the area walkable
-            hffec27: { cmd: "enter", room: "likelikeBackyard", label: "Backyard", point: [6, 88], enterPoint: [116, 69], obstacle: false },
-            h00e436: { cmd: "enter", room: "likelikeOutside", label: "Street", point: [102, 98], enterPoint: [103, 84], obstacle: false },
-            hab5236: { cmd: "enter", room: "firstFloor", label: "oMoMA", point: [116, 85], enterPoint: [63, 98], obstacle: false },
+            hffec27: { cmd: "enter", room: "Backyard", label: "Backyard", point: [6, 88], enterPoint: [116, 69], obstacle: false },
+            h00e436: { cmd: "enter", room: "bithotelOutside", label: "Exit BitHotel", point: [102, 98], enterPoint: [103, 84], obstacle: false },
+            hab5236: { cmd: "enter", room: "firstFloor", label: "First Floor", point: [116, 85], enterPoint: [63, 98], obstacle: false },
 
             //text displays a text only on the client
             //txt: the text
@@ -125,8 +125,8 @@ module.exports.ROOMS = {
             //point: where to walk after click
             //enterPoint: where to spawn in the next room
             //obstacle: is the area walkable
-            hffec27: { cmd: "enter", room: "likelikeBackyard", label: "Backyard", point: [6, 88], enterPoint: [116, 69], obstacle: false },
-            h00e436: { cmd: "enter", room: "likelikeOutside", label: "Street", point: [102, 98], enterPoint: [103, 84], obstacle: false },
+            hffec27: { cmd: "enter", room: "Backyard", label: "Backyard", point: [6, 88], enterPoint: [116, 69], obstacle: false },
+            h00e436: { cmd: "enter", room: "bithotelOutside", label: "Exit BitHotel", point: [102, 98], enterPoint: [103, 84], obstacle: false },
             //text displays a text only on the client
             //txt: the text
             //align: center or left
@@ -148,7 +148,7 @@ module.exports.ROOMS = {
         }
     },
 
-    likelikeOutside: {
+    bithotelOutside: {
         bg: "bithotelout.png",
         frames: 2,
         frameDelay: 30,
@@ -164,7 +164,7 @@ module.exports.ROOMS = {
         }
     },
 
-    likelikeBackyard: {
+    Backyard: {
         bg: "likelike-backyard.png",
         frames: 2,
         frameDelay: 30,
@@ -176,7 +176,7 @@ module.exports.ROOMS = {
         spawn: [38, 63, 108, 83],
         areaColors: {
             //h will be replaced by #
-            hff77a8: { cmd: "enter", room: "likelike", label: "Enter LIKELIKE", point: [119, 69], enterPoint: [5, 88], obstacle: false },
+            hff77a8: { cmd: "enter", room: "likelike", label: "Enter Hotel", point: [119, 69], enterPoint: [5, 88], obstacle: false },
         },
         things: {
             //spreadsheets only 1 row ok?
@@ -212,7 +212,7 @@ module.exports.ROOMS = {
         spawn: [15, 77, 113, 96],
         areaColors: {
             //left
-            hffec27: { cmd: "enter", room: "cnsnntrm", label: "cnsnnt rm", point: [10, 86], enterPoint: [114, 86], obstacle: false },
+            hffec27: { cmd: "enter", room: "cnsnntrm", label: "Security Room", point: [10, 86], enterPoint: [114, 86], obstacle: false },
             //right
             h00e436: { cmd: "enter", room: "mirrorRoom", label: "Mirror Room", point: [117, 86], enterPoint: [12, 86], obstacle: false },
             //up
@@ -294,7 +294,7 @@ module.exports.ROOMS = {
         },
         things: {
             //sprite spreadsheets only 1 row ok?
-            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "Museum guard" }
+            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "Hotel guard" }
         }
 
     },
@@ -382,9 +382,9 @@ module.exports.ROOMS = {
         areaColors: {
             //left door
             hffec27: { cmd: "enter", room: "thirdFloor", label: "Hall", point: [10, 77], enterPoint: [114, 86], obstacle: false },
-            hffccaa: { cmd: "text", label: "Book", txt: "Fifty Shades of Grey", align: "center", lines: 1, point: [16, 61] },
-            hff77a8: { cmd: "text", label: "Book", txt: "Fifty Shades Darker", align: "center", lines: 1, point: [16, 61] },
-            hff9d81: { cmd: "text", label: "Book", txt: "Fifty Shades Freed", align: "center", lines: 1, point: [16, 61] },
+            hffccaa: { cmd: "text", label: "Book", txt: "Oliver Twist", align: "center", lines: 1, point: [16, 61] },
+            hff77a8: { cmd: "text", label: "Book", txt: "Chocolate Factory", align: "center", lines: 1, point: [16, 61] },
+            hff9d81: { cmd: "text", label: "Book", txt: "Othello", align: "center", lines: 1, point: [16, 61] },
             //action requires a custom listener in the serverMod listening to actionId
             hff6c24: { cmd: "action", actionId: "TVInteract", label: "TV", point: [39, 69], obstacle: false },
             h008751: { cmd: "text", label: "Picture", txt: "Family at Disneyworld", align: "center", lines: 1, point: [52, 61] },
@@ -416,15 +416,15 @@ module.exports.ROOMS = {
         musicVolume: 0.5,
         areaColors: {
             //right
-            hff004d: { cmd: "text", label: "Painting", txt: "An original Rothko?", align: "center", lines: 1, point: [27, 65], obstacle: false },
-            h00e436: { cmd: "text", label: "Window", txt: "Can you see the incline from here?", align: "center", lines: 1, point: [33, 59], obstacle: false },
-            hffec27: { cmd: "text", label: "Window", txt: "The Paris of Appalachia", align: "center", lines: 1, point: [53, 59], obstacle: false },
-            h29adff: { cmd: "text", label: "Window", txt: "Ah... the city of bridges!", align: "center", lines: 1, point: [73, 59], obstacle: false },
-            hff6c24: { cmd: "text", label: "Window", txt: "Gentrification is beautiful", align: "center", lines: 1, point: [83, 59], obstacle: false },
-            hffccaa: { cmd: "text", label: "Cocktail", txt: "*You drink an Old fashioned*", align: "center", lines: 1, point: [45, 76], obstacle: false },
+            hff004d: { cmd: "text", label: "Mona Lisa", txt: "Are you smiling?", align: "center", lines: 1, point: [27, 65], obstacle: false },
+            h00e436: { cmd: "text", label: "Window", txt: "The mario bros?", align: "center", lines: 1, point: [33, 59], obstacle: false },
+            hffec27: { cmd: "text", label: "Window", txt: "Aeroplane!", align: "center", lines: 1, point: [53, 59], obstacle: false },
+            h29adff: { cmd: "text", label: "Window", txt: "Ah... the city of lights!", align: "center", lines: 1, point: [73, 59], obstacle: false },
+            hff6c24: { cmd: "text", label: "Window", txt: "The Tokyo Tower!", align: "center", lines: 1, point: [83, 59], obstacle: false },
+            hffccaa: { cmd: "text", label: "Wine", txt: "*You drink a vintage wine*", align: "center", lines: 1, point: [45, 76], obstacle: false },
             hff77a8: { cmd: "text", label: "Champagne", txt: "It's a magnum bottle", align: "center", lines: 1, point: [38, 76], obstacle: false },
             hb7250b: { cmd: "text", label: "Caviar tartines", txt: "*You eat a tartine*", align: "center", lines: 1, point: [31, 76], obstacle: false },
-            hab5236: { cmd: "text", label: "Chocolate fountain", txt: "A little bit tacky", align: "center", lines: 1, point: [24, 76], obstacle: false },
+            hab5236: { cmd: "text", label: "Chocolate fountain", txt: "A little bit sweet", align: "center", lines: 1, point: [24, 76], obstacle: false },
             h065ab5: { cmd: "enter", room: "thirdFloor", label: "Hall", point: [64, 79], enterPoint: [30, 73], obstacle: false }
         },
         things: {
