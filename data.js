@@ -149,7 +149,7 @@ module.exports.ROOMS = {
     },
 
     likelikeOutside: {
-        bg: "likelike-outside-omoma.png",
+        bg: "bithotelout.png",
         frames: 2,
         frameDelay: 30,
         avatarScale: 2,
