@@ -102,7 +102,7 @@ module.exports.ROOMS = {
         //if spreadsheet frames
         frames: 2,
         //if animated, animation speed in refreshes (frame dependent)
-        frameDelay: 30,
+        frameDelay: 1,
         //normally 2, avatars can be scaled to simulate camera distance
         avatarScale: 2,
         //a shade to tint the avatars to simulate light color, #FFFFFF normal
