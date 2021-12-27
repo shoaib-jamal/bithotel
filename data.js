@@ -55,7 +55,7 @@ module.exports.ROOMS = {
         //a shade to tint the avatars to simulate light color, #FFFFFF normal
         tint: "#ffbbb8",
         //the html body color can be changed
-        pageBg: "#ab5236",
+        pageBg: "#000",
         //minimum height for the speech bubbles
         bubblesY: 50,
         //if spawning directly in this room, top left and bottom right point defining the rectangular spawn area (random within it)
@@ -153,7 +153,7 @@ module.exports.ROOMS = {
         frames: 2,
         frameDelay: 30,
         avatarScale: 2,
-        pageBg: "#ab5236",
+        pageBg: "#000",
         area: "likelikeOutside-areas.png",
         tint: "#fdeac8",
         bubblesY: 44,
