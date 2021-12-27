@@ -470,7 +470,7 @@ module.exports.VIPRoomJoin = function (playerObject, roomId) {
         //force leave
         if (io.sockets.sockets[expelled] != null) {
 
-            this.transferPlayer(expelled, "VIPRoom", "likelikeOutside", 121 * 2, 89 * 2);
+            this.transferPlayer(expelled, "VIPRoom", "bithotelOutside", 121 * 2, 89 * 2);
             io.to(expelled).emit('godMessage', "Sorry, we had to expel you to make room for " + playerObject.nickName);
         }
 
