@@ -233,7 +233,7 @@ function censorshipRoomEnter(playerId, roomId) {
 
 function darkRoomEnter(playerId, roomId) {
     if (playerId == me.id) {
-        longText = "The Dark Room is only for cybersex. You must be 18 years or older to enter.";
+        longText = "No lights, no camera, just action!";
         longTextLines = -1;
         longTextAlign = "center";
     }
