@@ -2,32 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>The online Museum of Multiplayer Art / LIKELIKE Online</title>
+    <title>BitHotel Online</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <meta name="title" content="The online Museum of Multiplayer Art" />
-    <meta name="description" content="A tiny MMO" />
+    <meta name="title" content="BitHotel" />
+    <meta name="description" content="A pixel based social environment, taking place in a hotel." />
 
 
     <!-- SEO / social media-->
-    <meta name="author" content="Molleindustria" />
-    <meta name="copyright" content="Molleindustria" />
+    <meta name="author" content="Shoaib Jamal" />
+    <meta name="copyright" content="Shoaib Jamal" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="The tiniest MMORPG. Virtual Arcade and Online Museum of Multiplayer Art." />
-    <meta name="keywords" content="Game,Art,Molleindustria,videogame" />
+    <meta name="description" content="A pixel based social environment, taking place in a hotel." />
+    <meta name="keywords" content="Game,RPG,Multiplayer,bithotel" />
 
-    <meta property="og:image" content="https://molleindustria.org/images/omoma.png" />
-    <meta property="og:title" content="LIKELIKE Online / oMoMA" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="BitHotel" />
     <meta property="og:description"
-        content="The tiniest MMORPG. Virtual Arcade and Online Museum of Multiplayer Art." />
+        content="A pixel based mmo-hotel and a multiplayer social environment." />
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@likelikearcade" />
-    <meta name="twitter:title" content="LIKELIKE Online / oMoMA" />
-    <meta name="twitter:description"
-        content="The tiniest MMORPG. Virtual Arcade and Online Museum of Multiplayer Art." />
-    <meta name="twitter:image" content="https://molleindustria.org/images/omoma.png" />
 
     <!-- This is a standard p5.js index, NOTE the p5.dom.min.js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js'></script>
@@ -51,7 +45,7 @@
 
                 <div class="lobby-message">What's your name?</div>
                 <form action="" onsubmit="return nameOk()">
-                    <input id="lobby-field" class="lobby-field" placeholder="username" maxlength="16" autocomplete="off"
+                    <input id="lobby-field" class="lobby-field" placeholder="nickname" maxlength="16" autocomplete="off"
                         autocorrect="off" autocapitalize="off" spellcheck="false" />
                 </form>
                 <div id="lobby-error" class="lobby-error-message"></div>
@@ -67,7 +61,7 @@
         <!-- talk form is below canvas getTalkInput is what happens when return is pressed-->
         <form id="join-form" action="" onsubmit="return joinGame()" style="display: none;">
             <!-- call the function below on button press-->
-            <button class="join-button" type="button" onclick="joinGame();">JOIN</button>
+            <button class="join-button" type="button" onclick="joinGame();">PLAY!</button>
         </form>
 
         <form id="user-form" action="" onsubmit="return nameOk()" style="display: none;">
@@ -83,12 +77,12 @@
         <form id="talk-form" action="" onsubmit="return getTalkInput()" style="display: none;">
             <input class="talk-field" placeholder="TYPE HERE" maxlength="40" id="chatField" autocomplete="off" />
             <!-- call the function below on button press-->
-            <button class="talk-button" type="button" onclick="getTalkInput();">TALK</button>
+            <button class="talk-button" type="button" onclick="getTalkInput();">SEND</button>
         </form>
 
 
     </div>
-    <div id="info" class="info"><a href="http://likelike.org/shows/" target="_blank">>LIKELIKE.ORG</a></div>
+    <div id="info" class="info"><a href="http://github.com/shoaib-jamal/" target="_blank">>by SHOAIB</a></div>
 
 </body>
 
