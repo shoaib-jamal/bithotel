@@ -1,5 +1,7 @@
 # BitHotel
 
+![](public/main.png)
+
 Choose an avatar and hang out with your friends in a virtual version of a 16-bit pixel based hotel, situated in a retro arena
 
 BitHotel is built with node.js, socket.io, [p5.js](https://p5js.org/), and the add-on [p5.play](https://molleindustria.github.io/p5.play/), it's hosted on [heroku.com](https://heroku.com/)  
