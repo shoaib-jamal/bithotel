@@ -1,6 +1,4 @@
-# BitHotel
-
-![](public/main.png)
+# BitHotel ![](public/main.png)
 
 Choose an avatar and hang out with your friends in a virtual version of a 16-bit pixel based hotel, situated in a retro arena
 
