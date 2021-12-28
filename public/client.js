@@ -587,7 +587,7 @@ function setupGame() {
         currentAvatar = floor(random(0, walkSheets.length));
         newGame();
     }
-    createAboutPage();
+
 }
 
 
