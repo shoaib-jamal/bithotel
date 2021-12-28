@@ -45,7 +45,7 @@ module.exports.ROOMS = {
 
     likelike: {
         //the background graphics, it can be a spreadsheet
-        bg: "likelike-bg-pico.png",
+        bg: "bg-pico.png",
         //if spreadsheet frames
         frames: 2,
         //if animated, animation speed in refreshes (frame dependent)
@@ -81,18 +81,26 @@ module.exports.ROOMS = {
             //align: center or left
             //lines: manual number of lines, p5 doesn't understand line breaks
             //url: uptionally open a page on click
-            hff004d: { cmd: "text", txt: "ENNUIGI\nby Josh Millard, 2015\nClick to play.\nControls: Arrow keys.", align: "left", lines: 4, url: "https://www.lexaloffle.com/bbs/?tid=2232", label: "An existential game", point: [34, 78], obstacle: true },
-            hff77a8: { cmd: "text", txt: "STRUNG OUT IN HEAVEN'S HIGH\nby Sean S. LeBlanc\nand Ian Martin, 2016\nClick to play.\nControls: Arrow keys + Z.", align: "left", lines: 5, url: "https://www.lexaloffle.com/bbs/?tid=3941", label: "A trippy game", point: [64, 78], obstacle: true },
-            hffccaa: { cmd: "text", txt: "GET COMFORTABLE\nby mcccclean, 2018\nClick to play.\nControls: Arrow keys.", align: "left", lines: 4, url: "https://mcccclean.itch.io/get-comfortable", label: "A snuggly game", point: [92, 78], obstacle: true },
-            h83769c: { cmd: "text", txt: "HYBRIS\nby Benjamin Soule', 2015\nClick to play.\nControls: Arrow keys + Z.", align: "left", lines: 4, url: "https://www.lexaloffle.com/bbs/?tid=2897", label: "A viral game", point: [16, 82], obstacle: true },
-        },
+           },
         //list of sprites to create in the room
         //sprites are rendered according to depth sort so they can appear above the avatars unlike the background
         //they can be animated, mouse reactive and trigger commands like the areas above
         things: {
-            //sprite spreadsheets only 1 row ok?
-            cabinet: { file: "top-cabinet-pico.png", frames: 1, frameDelay: 1, position: [24, 89], label: "A huggy game", command: { cmd: "text", txt: "EMBRACE\nby Remy Devaux, 2018\nClick to play.\nControls: Arrow keys.", align: "left", lines: 4, url: "https://trasevol-dog.itch.io/embrace", label: "A huggy game", point: [33, 92] } }
-        }
+           securityDesk: {
+        file: "objects/securityDesk.png",
+        frames: 1,
+        frameDelay: 30,
+        position: [43, 65],
+        label: "Reception Desk",
+      },
+      guard: {
+        file: "characters/museumGuard.png",
+        frames: 1,
+        frameDelay: 30,
+        position: [47, 58],
+        label: "Receptionist",
+      },
+       }
     },
 
 
