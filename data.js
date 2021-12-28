@@ -43,7 +43,7 @@ module.exports.SOUNDS = [
 
 module.exports.ROOMS = {
 
-    likelike: {
+    reception: {
         //the background graphics, it can be a spreadsheet
         bg: "bg-pico.png",
         //if spreadsheet frames
@@ -168,7 +168,7 @@ module.exports.ROOMS = {
         spawn: [14, 84, 119, 92],
         areaColors: {
             //h will be replaced by #
-            hff77a8: { cmd: "enter", room: "likelike", label: "Enter BitHotel", point: [100, 84], enterPoint: [98, 98], obstacle: false },
+            hff77a8: { cmd: "enter", room: "reception", label: "Enter BitHotel", point: [100, 84], enterPoint: [98, 98], obstacle: false },
         }
     },
 
@@ -184,7 +184,7 @@ module.exports.ROOMS = {
         spawn: [38, 63, 108, 83],
         areaColors: {
             //h will be replaced by #
-            hff77a8: { cmd: "enter", room: "likelike", label: "Enter Hotel", point: [119, 69], enterPoint: [5, 88], obstacle: false },
+            hff77a8: { cmd: "enter", room: "reception", label: "Enter Hotel", point: [119, 69], enterPoint: [5, 88], obstacle: false },
         },
         things: {
             //spreadsheets only 1 row ok?
