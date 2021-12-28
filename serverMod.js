@@ -55,6 +55,36 @@ module.exports.initMod = function (io, gameState, DATA) {
     //load extended dictionary, this is 3Mb but only sits on the server and it's used by only one room
     const fs = require('fs');
     global.dictionary = fs.readFileSync('dictionary.json');
+    global.message = 0;
+    setInterval(function () {
+        var messages = [
+            "Explore the galleries",
+            "Click projects to view them",
+            "Press play to hear from students",
+            "Check out the map",
+        ]
+
+        //sends a message to the room
+        io.to("reception").emit('nonPlayerTalked', {
+            id: "",
+            labelColor: "#ffffff",
+            room: "reception",
+            message: messages[global.message],
+            x: 51*2,
+            y: 56*2
+        });
+
+        global.message++;
+
+        if (global.message >= messages.length) {
+            global.message = 0;
+        }
+
+    }, 10 * 1000);
+    //global function ffs
+    global.random = function (min, max) {
+        return Math.random() * (max - min) + min;
+    }
 
     //cycle through contraints in the consonant room
     global.consonant = 0;
