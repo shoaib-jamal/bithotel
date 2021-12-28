@@ -322,7 +322,7 @@ module.exports.ROOMS = {
     musicVolume: 0.5,
     areaColors: {
       //right
-      h00e436: {cmd: "enter", room: "firstFloor", label: "Hall", point: [10, 86], enterPoint: [114, 86], obstacle: false },
+      hffec27: {cmd: "enter", room: "firstFloor", label: "Hall", point: [10, 86], enterPoint: [114, 86], obstacle: false },
       },
      },
     censorshipRoom: {
