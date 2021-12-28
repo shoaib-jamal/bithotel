@@ -87,14 +87,14 @@ module.exports.ROOMS = {
         //they can be animated, mouse reactive and trigger commands like the areas above
         things: {
            securityDesk: {
-        file: "objects/securityDesk.png",
+        file: "securityDesk.png",
         frames: 1,
         frameDelay: 30,
         position: [43, 65],
         label: "Reception Desk",
       },
       guard: {
-        file: "characters/museumGuard.png",
+        file: "museumGuard.png",
         frames: 1,
         frameDelay: 30,
         position: [47, 58],
