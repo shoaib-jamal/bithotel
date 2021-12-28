@@ -218,9 +218,9 @@ module.exports.ROOMS = {
             //up
             h29adff: { cmd: "enter", room: "secondFloor", label: "2nd Floor", point: [30, 73], enterPoint: [99, 73], obstacle: false },
             //wall text
-            ha8e72e: { cmd: "text", txt: "ONLINE MUSEUM OF MULTIPLAYER ART\nA survey of contemporary playful art. You have to talk and interact with other visitors to get the art.", align: "left", lines: 5, label: "Wall text", point: [50, 73], obstacle: false },
-            hb7250b: { cmd: "text", txt: "Anomaly\nMixed media, subjectively perceived.", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
-            hbe1250: { cmd: "enter", room: "likelike", label: "LIKELIKE Arcade", point: [63, 98], enterPoint: [116, 85], obstacle: false },
+            //ha8e72e: { cmd: "text", txt: "Welcome to the The BitHotel.", align: "left", lines: 5, label: "Wall text", point: [50, 73], obstacle: false },
+            hb7250b: { cmd: "text", txt: "Something glitchy happens here.", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
+            hbe1250: { cmd: "enter", room: "likelike", label: "Lobby", point: [63, 98], enterPoint: [116, 85], obstacle: false },
 
         },
         things: {
@@ -294,7 +294,7 @@ module.exports.ROOMS = {
         },
         things: {
             //sprite spreadsheets only 1 row ok?
-            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "Hotel guard" }
+            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "I hate vovels" }
         }
 
     },
@@ -314,7 +314,7 @@ module.exports.ROOMS = {
     musicVolume: 0.5,
     areaColors: {
       //right
-      h00e436: {cmd: "enter", room: "firstFloor", label: "Exit Room", point: [117, 86], enterPoint: [12, 86], obstacle: false },
+      h00e436: {cmd: "enter", room: "firstFloor", label: "Hall", point: [10, 86], enterPoint: [114, 86], obstacle: false },
       },
      },
     censorshipRoom: {
