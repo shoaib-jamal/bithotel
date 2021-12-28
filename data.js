@@ -425,7 +425,7 @@ module.exports.ROOMS = {
         areaColors: {
             //right
             hff004d: { cmd: "text", label: "Mona Lisa", txt: "Are you smiling?", align: "center", lines: 1, point: [27, 65], obstacle: false },
-            h00e436: { cmd: "text", label: "Window", txt: "Dhosts?", align: "center", lines: 1, point: [33, 59], obstacle: false },
+            h00e436: { cmd: "text", label: "Window", txt: "Ghosts?", align: "center", lines: 1, point: [33, 59], obstacle: false },
             hffec27: { cmd: "text", label: "Window", txt: "Aeroplane!", align: "center", lines: 1, point: [53, 59], obstacle: false },
             h29adff: { cmd: "text", label: "Window", txt: "Ah... the city of lights!", align: "center", lines: 1, point: [73, 59], obstacle: false },
             hff6c24: { cmd: "text", label: "Window", txt: "The Tokyo Tower!", align: "center", lines: 1, point: [83, 59], obstacle: false },
