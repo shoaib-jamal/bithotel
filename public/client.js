@@ -590,7 +590,10 @@ function setupGame() {
 }
 
 
-
+createAboutPage();
+  var event = new Event("p5loaded", { bubbles: true });
+  canvas_container.dispatchEvent(event);
+}
 
 
 function newGame() {
