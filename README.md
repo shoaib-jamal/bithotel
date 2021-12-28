@@ -7,7 +7,7 @@ Here, you can chat with others, explore different rooms, hangout with pet harvey
 BitHotel is built with node.js, socket.io, [p5.js](https://p5js.org/), and the add-on [p5.play](https://molleindustria.github.io/p5.play/), it's hosted on [heroku.com](https://heroku.com/)  
 
 ## Contributing
-You may contribute to the code by sending pull requests. If you are a pixel art designer, you may update the designs as well as the hotel appearance. Trust me, it means alot for the BitHotel family.
+You may contribute to the code by sending pull requests. You may apply for adminship and manage the server and its users. If you are a pixel art designer, you may update the designs as well as the hotel appearance. Trust me, it means alot for the BitHotel family.
 
 BitHotel is based on LIKELIKE, an awesome project by [Molleindustria](http://molleindustria.org/). 
 
