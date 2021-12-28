@@ -58,7 +58,7 @@ module.exports.initMod = function (io, gameState, DATA) {
     global.message = 0;
     setInterval(function () {
         var messages = [
-            "I hope there is no mess-up in the dark room",
+            "I hope there's no mess in darkroom",
         ]
 
         //sends a message to the room
