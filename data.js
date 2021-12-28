@@ -305,7 +305,7 @@ module.exports.ROOMS = {
     avatarScale: 2,
     frames: 2,
     frameDelay: 10,
-    pageBg: indoorBG,
+    pageBg: #000,
     area: "gameRoom-areas.png",
     tint: "#75787f",
     bubblesY: 46,
@@ -314,15 +314,9 @@ module.exports.ROOMS = {
     musicVolume: 0.5,
     areaColors: {
       //right
-      h00e436: {
-        cmd: "enter",
-        room: "firstFloor",
-        label: "Exit Room",
-        point: [117, 86],
-        enterPoint: [12, 86],
-        obstacle: false,
-      }
+      h00e436: {cmd: "enter", room: "firstFloor", label: "Exit Room", point: [117, 86], enterPoint: [12, 86], obstacle: false },
       },
+     },
     censorshipRoom: {
         bg: "leftRoom.png",
         avatarScale: 2,
