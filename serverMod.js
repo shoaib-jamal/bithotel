@@ -41,7 +41,7 @@ module.exports.initMod = function (io, gameState, DATA) {
         "Are you real?",
         "Yes",
         "I don't trust you",
-        "This is weird",
+        "Hope there's no mess in darkroom",
         "Prove you are human",
         "No",
         "Have you seen that?",
