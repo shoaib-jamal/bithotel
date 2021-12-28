@@ -58,10 +58,7 @@ module.exports.initMod = function (io, gameState, DATA) {
     global.message = 0;
     setInterval(function () {
         var messages = [
-            "Explore the galleries",
-            "Click projects to view them",
-            "Press play to hear from students",
-            "Check out the map",
+            "I hope there is no mess-up in the dark room",
         ]
 
         //sends a message to the room
