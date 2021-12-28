@@ -214,7 +214,7 @@ module.exports.ROOMS = {
             //left
             hffec27: { cmd: "enter", room: "cnsnntrm", label: "Security Room", point: [10, 86], enterPoint: [114, 86], obstacle: false },
             //right
-            h00e436: { cmd: "enter", room: "mirrorRoom", label: "Mirror Room", point: [117, 86], enterPoint: [12, 86], obstacle: false },
+            h00e436: { cmd: "enter", room: "disco", label: "Disco Room", point: [117, 86], enterPoint: [12, 86], obstacle: false },
             //up
             h29adff: { cmd: "enter", room: "secondFloor", label: "2nd Floor", point: [30, 73], enterPoint: [99, 73], obstacle: false },
             //wall text
@@ -300,21 +300,29 @@ module.exports.ROOMS = {
     },
 
 
-    mirrorRoom: {
-        bg: "rightRoom.png",
-        avatarScale: 2,
-        pageBg: "#e1cdcd",
-        area: "rightRoom-areas.png",
-        tint: "#FFFFFF",
-        bubblesY: 46,
-        spawn: [15, 77, 113, 96],
-        areaColors: {
-            //left
-            hffec27: { cmd: "enter", room: "firstFloor", label: "Hall", point: [10, 86], enterPoint: [114, 86], obstacle: false },
-        }
-
-    },
-
+     disco: {
+    bg: "discoRoom-bg.png",
+    avatarScale: 2,
+    frames: 2,
+    frameDelay: 10,
+    pageBg: indoorBG,
+    area: "gameRoom-areas.png",
+    tint: "#75787f",
+    bubblesY: 46,
+    spawn: [15, 77, 113, 96],
+    music: "Kyouhei 3.mp3",
+    musicVolume: 0.5,
+    areaColors: {
+      //right
+      h00e436: {
+        cmd: "enter",
+        room: "firstFloor",
+        label: "Exit Room",
+        point: [117, 86],
+        enterPoint: [12, 86],
+        obstacle: false,
+      }
+      },
     censorshipRoom: {
         bg: "leftRoom.png",
         avatarScale: 2,
