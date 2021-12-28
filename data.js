@@ -6,7 +6,7 @@ module.exports.SETTINGS = {
     //minimum time between talk messages enforced by both client and server
     ANTI_SPAM: 1000,
     //shows up at first non lurking login
-    INTRO_TEXT: "Tap to move around"
+    INTRO_TEXT: "Tap anywhere to move"
 };
 
 //miscellaneous assets to preload
@@ -190,10 +190,8 @@ module.exports.ROOMS = {
             //spreadsheets only 1 row ok?
             harvey: { file: "harvey.png", frames: 2, frameDelay: 10, position: [102, 77], label: "Harvey", command: { cmd: "text", txt: "*You pet the dog*", align: "center", lines: 1, point: [101, 84] } },
             chairs: { file: "likelike-backyard-chairs.png", position: [33, 44] },
-            cabinet: {
-                file: "pico-cabinet.png", frames: 2, frameDelay: 10, position: [92, 26], label: "Looping animations?",
-                command: { cmd: "text", txt: "TWEETCARTS\nby Varius Creators\nThe code of each of these PICO-8 generated animations fits into a single tweet (280 chars).", align: "left", lines: 5, url: "https://twitter.com/molleindustria/timelines/1254605222455934978", label: "Short animations?", point: [96, 46] }
-            }
+            cabinet: { file: "pico-cabinet.png", frames: 2, frameDelay: 10, position: [92, 26] }
+          
         }
     },
 
@@ -226,9 +224,9 @@ module.exports.ROOMS = {
             //up
             h29adff: { cmd: "enter", room: "secondFloor", label: "2nd Floor", point: [30, 73], enterPoint: [99, 73], obstacle: false },
             //wall text
-            ha8e72e: { cmd: "text", txt: "Wanna be admin? dm me: @shoaib.cy", align: "left", lines: 5, label: "Note", point: [50, 73], obstacle: false },
-            hb7250b: { cmd: "text", txt: "Something glitchy happens here", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
-            hbe1250: { cmd: "enter", room: "reception", label: "Lobby", point: [63, 98], enterPoint: [116, 85], obstacle: false },
+            ha8e72e: { cmd: "text", txt: "Adminship is free. Apply now and get access to privileged commands. DM me: @shoaib.cy", align: "left", lines: 5, label: "Note", point: [50, 73], obstacle: false },
+            hb7250b: { cmd: "text", txt: "Something glitchy happens here. Looking out for new ideas.", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
+            hbe1250: { cmd: "enter", room: "reception", label: "Reception", point: [63, 98], enterPoint: [116, 85], obstacle: false },
 
         },
         things: {
@@ -302,7 +300,7 @@ module.exports.ROOMS = {
         },
         things: {
             //sprite spreadsheets only 1 row ok?
-            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "I hate vovels" }
+            guard: { file: "museumGuard.png", frames: 1, frameDelay: 30, position: [13, 56], label: "Angry Guard" }
         }
 
     },
@@ -422,19 +420,19 @@ module.exports.ROOMS = {
         bubblesY: 40,
         secret: true,
         spawn: [56, 76, 69, 80],
-        //music: "smoothCrap.ogg",
+        music: "smoothCrap.ogg",
         musicVolume: 0.5,
         areaColors: {
             //right
             hff004d: { cmd: "text", label: "Mona Lisa", txt: "Are you smiling?", align: "center", lines: 1, point: [27, 65], obstacle: false },
-            h00e436: { cmd: "text", label: "Window", txt: "The mario bros?", align: "center", lines: 1, point: [33, 59], obstacle: false },
+            h00e436: { cmd: "text", label: "Window", txt: "Dhosts?", align: "center", lines: 1, point: [33, 59], obstacle: false },
             hffec27: { cmd: "text", label: "Window", txt: "Aeroplane!", align: "center", lines: 1, point: [53, 59], obstacle: false },
             h29adff: { cmd: "text", label: "Window", txt: "Ah... the city of lights!", align: "center", lines: 1, point: [73, 59], obstacle: false },
             hff6c24: { cmd: "text", label: "Window", txt: "The Tokyo Tower!", align: "center", lines: 1, point: [83, 59], obstacle: false },
             hffccaa: { cmd: "text", label: "Wine", txt: "*You drink a vintage wine*", align: "center", lines: 1, point: [45, 76], obstacle: false },
             hff77a8: { cmd: "text", label: "Champagne", txt: "It's a magnum bottle", align: "center", lines: 1, point: [38, 76], obstacle: false },
             hb7250b: { cmd: "text", label: "Caviar tartines", txt: "*You eat a tartine*", align: "center", lines: 1, point: [31, 76], obstacle: false },
-            hab5236: { cmd: "text", label: "Chocolate fountain", txt: "A little bit sweet", align: "center", lines: 1, point: [24, 76], obstacle: false },
+            hab5236: { cmd: "text", label: "Chocolate fountain", txt: "mmm...Chocolicious", align: "center", lines: 1, point: [24, 76], obstacle: false },
             h065ab5: { cmd: "enter", room: "thirdFloor", label: "Hall", point: [64, 79], enterPoint: [30, 73], obstacle: false }
         },
         things: {
