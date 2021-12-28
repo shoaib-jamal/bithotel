@@ -226,9 +226,9 @@ module.exports.ROOMS = {
             //up
             h29adff: { cmd: "enter", room: "secondFloor", label: "2nd Floor", point: [30, 73], enterPoint: [99, 73], obstacle: false },
             //wall text
-            //ha8e72e: { cmd: "text", txt: "Welcome to the The BitHotel.", align: "left", lines: 5, label: "Wall text", point: [50, 73], obstacle: false },
-            hb7250b: { cmd: "text", txt: "Something glitchy happens here.", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
-            hbe1250: { cmd: "enter", room: "likelike", label: "Lobby", point: [63, 98], enterPoint: [116, 85], obstacle: false },
+            ha8e72e: { cmd: "text", txt: "Wanna be admin? dm me: @shoaib.cy", align: "left", lines: 5, label: "Note", point: [50, 73], obstacle: false },
+            hb7250b: { cmd: "text", txt: "Something glitchy happens here", align: "left", lines: 3, label: "Installation?", point: [75, 77], obstacle: false },
+            hbe1250: { cmd: "enter", room: "reception", label: "Lobby", point: [63, 98], enterPoint: [116, 85], obstacle: false },
 
         },
         things: {
