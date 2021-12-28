@@ -305,7 +305,7 @@ module.exports.ROOMS = {
     avatarScale: 2,
     frames: 2,
     frameDelay: 10,
-    pageBg: #000,
+    pageBg: "#000",
     area: "gameRoom-areas.png",
     tint: "#75787f",
     bubblesY: 46,
