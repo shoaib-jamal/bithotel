@@ -1,251 +1,324 @@
 @font-face {
-	font-family: monogram;
-	src: url("assets/monogram_extended.ttf");
+  font-family: monogram;
+  src: url("assets/monogram_extended.ttf");
 }
 
 html {
-    margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-	font-family: monogram;
-	font-size: 32px;
-	margin: 0px;
-	padding: 0px;
-	background-color: #000;
-	font-smooth: never;
-	-webkit-font-smoothing: none;
-	color: white;
+  overflow: hidden;
+  font-family: monogram;
+  font-size: 32px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  color: white;
+  /*hides scroll bars*/
+  overflow: hidden;
 }
 
 #canvas-container {
-	width: 800px;
-	height: 600px;
-	margin: auto;
-	color:#000;
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  color: #000;
 }
 
 canvas {
-	z-index: 1;
-	display: block;
-	/*prevents double click selection*/
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	position: absolute;
-	top: 0px;
-	margin: auto;
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -webkit-crisp-edges;
-	image-rendering: pixelated;
-    image-rendering: crisp-edges;
-    touch-action: manipulation;
+  z-index: 1;
+  display: block;
+  /*prevents double click selection*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  touch-action: manipulation;
 }
 
 #interface {
-    display: block;
-    margin: auto;
-    text-align: center;
-	margin-top: 8px;
-	
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 8px;
 }
 
 #talk-form {
-	display: block;
-	background: none;
-	/*width: 800px;*/
-	width: 100%;
-	margin: auto;
+  display: block;
+  background: none;
+  /*width: 800px;*/
+  width: 100%;
+  margin: auto;
 }
 
 #talk-form {
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
-
-
-
 
 /*TEXT FIELDS*/
 .talk-field,
 .lobby-field {
-	font-family: monogram;
-	border: none;
-	padding-top: 4px;
-	padding-bottom: 10px;
-	padding-left: 4px;
-	outline: none;
-    font-size: 64px;
-    background-color: white;
+  font-family: monogram;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  padding-left: 4px;
+  outline: none;
+  font-size: 64px;
+  background-color: white;
 }
 
 .talk-field {
-	display: inline-block;
-	width: 70%;
-	float: left;
-    /*margin-right:4px;*/
-    margin-top:4px;
+  display: inline-block;
+  width: 70%;
+  float: left;
+  /*margin-right:4px;*/
+  margin-top: 4px;
 }
 
-
 /*USERNAME*/
-
 .lobby-message {
-    font-size: 64px;
-    margin-bottom: 32px;
+  font-size: 64px;
+  margin-bottom: 32px;
 }
 
 .lobby-error-message {
-	font-size: 32px;
-	color: #ff004d;
+  font-size: 32px;
+  color: #ff004d;
 }
 
 .lobby-field {
-	border: 4px solid #757575;
-	text-align: center;
-	width: 80%;
-	outline: none;
+  border: 4px solid #757575;
+  text-align: center;
+  width: 80%;
+  outline: none;
 }
 
 .talk-button,
 .join-button,
 .user-button,
 .avatar-button {
-	font-family: monogram;
-	font-size: 64px;
-	margin: 0px;
-	display: inline-block;
-	border: none;
-	text-align: center;
-	color: white;
-    background: #ff004d;
-    outline: none;
-    border-bottom: 4px solid#424242;
-    margin-left: auto;
-    margin-right:auto;
-    padding-top: 4px;
-	padding-bottom: 10px;
-    padding-left: 16px;
-	padding-right: 16px;
-    cursor: pointer;
+  z-index: 2;
+  font-family: monogram;
+  font-size: 64px;
+  margin: 0px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  color: white;
+  background: #ff004d;
+  outline: none;
+  border-bottom: 4px solid#424242;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
 }
 
 /*USERNAME CONTINUE*/
 .lobby-button {
-	padding-left: 16px;
-	padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .talk-button {
-    /*float: right;*/
-  display:inline-block;
+  /*float: right;*/
+  display: inline-block;
   float: left;
   min-width: 120px;
-  width:28%;
-  
+  width: 28%;
 }
 
 #info {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 /*bottom link*/
 .info {
-	
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	display: block;
-	text-align: right;
-	margin-bottom: 8px;
-	margin-right: 8px;
+  z-index: 6;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  text-align: right;
+  margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .info a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: #ff77a8;
 }
 
 .info a:hover {
-	text-decoration: none;
-	color:#ff77a8;;
+  text-decoration: none;
+  color: white;
 }
-
 
 /* On small screen stack the talk button */
 @media screen and (max-height: 450px) {
   .talk-button {
-	  float: none;
+    float: none;
   }
-	.talk-field {
-		float: none;
-		width: 98%;
-		margin-bottom: 4px;
-	}
 
-	.info {
-		display: none;
-	}
+  .talk-field {
+    float: none;
+    width: 98%;
+    margin-bottom: 4px;
+  }
+
+  .info {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
-	.info {
-		display: none;
-	}
+  .info {
+    display: none;
+  }
 }
 
 .talk-button:active,
 .user-button:active,
 .avatar-button:active,
 .join-button:active {
-    background: #ff77a8;
-    border-bottom: none;
-    border-right: none;
-    margin-top: 4px;
+  background: #ff77a8;
+  border-bottom: none;
+  border-right: none;
+  margin-top: 4px;
 }
 
 .talk-button:hover,
 .user-button:hover,
 .avatar-button:hover,
 .join-button:hover {
-	background: #ff77a8;
+  background: #ff77a8;
 }
 
 /*Animate join to make sure people don't miss it*/
 @keyframes glowing {
-    0% { background-color: #ff004d; }
-    50% { background-color: #ff77a8;  }
-    100% { background-color: #ff004d;  }
+  0% {
+    background-color: #ff004d;
+  }
+
+  50% {
+    background-color: #ff77a8;
+  }
+
+  100% {
+    background-color: #ff004d;
+  }
 }
 
 .join-button {
-    animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
 }
-
 
 /*LOBBY OVERLAYS*/
 #lobby-container {
-	display: block;
-    height: 100%;
+  display: block;
+  height: 100%;
 }
-
 
 /* center on container */
 .content-center {
-	z-index: 2;
-	width: 100%;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -80%);
-	text-align: center;
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: center;
 }
 
+#map {
+  display: none;
+  z-index: 0;
+}
 
+#map-img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
+#player {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid black;
+}
 
+#about-button {
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 46px;
+}
 
+#about-page {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #d0e1cd;
+}
+
+#about-page-text {
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: black;
+  text-decoration: none;
+  font-size: 48px;
+}
+
+p {
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff77a8;
+}
+
+small {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
