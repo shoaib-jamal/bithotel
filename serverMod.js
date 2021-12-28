@@ -134,6 +134,26 @@ module.exports.initMod = function (io, gameState, DATA) {
 
 }
 
+module.exports.receptionJoin = function(player, roomId) {
+    const prefixes = [
+        "Welcome",
+        "Hello",
+        "Hi",
+        "Hey",
+        "How's it going"
+    ]
+
+    const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+
+    io.to("reception").emit('nonPlayerTalked', {
+        id: "",
+        labelColor: "#ffffff",
+        room: "reception",
+        message: `${prefix} ${player.nickName}`,
+        x: 51*2,
+        y: 56*2
+    });
+}
 
 //custom function called on the server side when a player successfully enters or exits the room
 //executed before it's broadcast to the other players
